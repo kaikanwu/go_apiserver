@@ -2,6 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
+	"main/handler/sd"
 	"main/router/middleware"
 	"net/http"
 )
@@ -22,6 +23,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	// health checker handler
 	svcd :=g.Group("/sd")
 	{
-		svcd.GET()
+		svcd.GET("/health",sd.HealthCheck)
 	}
+	return g
 }
