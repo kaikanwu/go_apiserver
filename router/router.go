@@ -21,9 +21,12 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	})
 
 	// health checker handler
-	svcd :=g.Group("/sd")
+	svcd := g.Group("/sd")
 	{
-		svcd.GET("/health",sd.HealthCheck)
+		svcd.GET("/health", sd.HealthCheck)
+		svcd.GET("/disk", sd.DiskCheck)
+		svcd.GET("/ram", sd.RAMCheck)
+		svcd.GET("/cpu", sd.CPUCheck)
 	}
 	return g
 }
