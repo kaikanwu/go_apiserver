@@ -12,17 +12,22 @@ import (
 	"time"
 )
 
-var(
-	cfg = pflag.StringP("config","c","","go api server config file path")
+var (
+	cfg = pflag.StringP("config", "c", "", "go api server config file path")
 )
 
 func main() {
 	// 启动 config
 	pflag.Parse()
 
-	if err :=config.Init(*cfg); err != nil {
+	if err := config.Init(*cfg); err != nil {
 		panic(err)
 	}
+	// test hot load
+	//for {
+	//	fmt.Println(viper.GetString("runmode"))
+	//	time.Sleep(4 * time.Second)
+	//}
 
 	// 启动 gin
 	gin.SetMode(viper.GetString("runmode"))

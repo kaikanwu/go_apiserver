@@ -21,6 +21,7 @@ func Init(cfg string) error {
 	if err := c.initConfig();err != nil {
 		return err
 	}
+	c.watchConfig()
 	return nil
 
 }
