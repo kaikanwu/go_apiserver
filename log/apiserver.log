@@ -1,2 +1,17 @@
 {"level":"INFO","timestamp":"2020-02-02 21:39:43.232","file":"go_apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :6663"}
 {"level":"INFO","timestamp":"2020-02-02 21:39:43.234","file":"go_apiserver/main.go:48","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-02-02 23:27:21.638","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:29:54.027","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:30:06.959","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:30:15.300","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:30:20.219","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:30:33.975","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:30:59.908","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:31:06.975","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:31:12.420","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:31:20.851","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:31:25.643","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:31:32.098","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:31:55.882","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:32:39.531","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}
+{"level":"INFO","timestamp":"2020-02-02 23:51:36.765","file":"config/config.go:57","msg":"Config file changed: #{e.Name}"}

@@ -7,6 +7,7 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"main/config"
+	"main/model"
 	"main/router"
 	"net/http"
 	"time"
@@ -28,6 +29,10 @@ func main() {
 	//	fmt.Println(viper.GetString("runmode"))
 	//	time.Sleep(4 * time.Second)
 	//}
+
+	// init db
+	model.DB.Init()
+	defer model.DB.Close()
 
 	// 启动 gin
 	gin.SetMode(viper.GetString("runmode"))
