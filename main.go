@@ -3,14 +3,27 @@ package main
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/pflag"
 	"log"
+	"main/config"
 	"main/router"
 	"net/http"
 	"time"
 )
 
-func main() {
+var(
+	cfg = pflag.StringP("config","c","","go api server config file path")
+)
 
+func main() {
+	// 启动 config
+	pflag.Parse()
+
+	if err :=config.Init(*cfg); err != nil {
+		panic(err)
+	}
+
+	// 启动 gin
 	g := gin.New()
 
 	middlewares := []gin.HandlerFunc{}

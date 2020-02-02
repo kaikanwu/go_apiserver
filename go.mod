@@ -7,4 +7,6 @@ require (
 	github.com/gin-gonic/gin v1.5.0
 	github.com/go-ole/go-ole v1.2.4 // indirect
 	github.com/shirou/gopsutil v2.19.12+incompatible
+	github.com/spf13/pflag v1.0.5
+	github.com/spf13/viper v1.6.2
 )
